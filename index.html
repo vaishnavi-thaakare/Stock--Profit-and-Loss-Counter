@@ -1,46 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Profit and loss Counter</title>
+
+    <title> Stock Profit and loss Calculator</title>
     <style>
-        #btn{
-            color:white;
+        #btn {
+            color: white;
             background-color: blueviolet;
-            border:2px solid blueviolet;
+            border: 2px solid blueviolet;
             border-radius: 0.5rem;
+            margin:2rem;
         }
-        #output{
+        h1{
+            color: white;
+            background-color: blueviolet;
+
+        }
+
+        body {
+            text-align: center;
+        }
+
+        #output {
             width: 90%;
-            height:30vh;
-            border: 2px solid black;
-            
+            height: 30vh;
+            display: block;
+        }
+
+        label {
+            display: block;
+            padding: 1rem;
+        }
+        input{
+            padding:0.5rem;
+          
+        }
+        #container{
+            max-width: 600px;
+            margin:auto;
         }
     </style>
 
 
 </head>
+
 <body>
+
+
+    <div id="container">
     <h1>Profit and loss Calculator</h1>
     <label for="initial-price">Initial Price</label>
     <input id="initial-price" type="number" placeholder="Write initial price here">
     <label for="quantity">Quantity</label>
     <input id="quantity" type="number" placeholder="Write Quantity here">
     <label for="Current-price">Current price</label>
-    <input id="Current-price" type="number" placeholder="Write Current price here">
+    <input id="Current-price" type="number" placeholder="Write Current price here"><br>
+    <br>
 
 
     <button id="btn">Click Me !</button>
     <div id="output"></div>
-
-
-
-
-
-
+    </div>
     <script src="app.js"></script>
 </body>
+
 </html>
